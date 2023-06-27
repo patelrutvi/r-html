@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #subhandel{
+            border: 1px solid black;
+            display: inline-block;
+            padding: 20px;
+            
+        }
+        #incomans{
+            margin:  20px;
+            display: none;
+            
+        }
+        span,tr,th{
+            margin: 20px;
+            padding: 10px;
+        }
+        label,input{
+            margin: 2px 5px;
+        }
+    </style>
+</head>
+<body>
+    <form  method="post" action="#" id="subhandel" onsubmit=" return heandelsub()">
+    
+        <label for="Basic">Basic deductions u/s 80C</label>
+        <input type="text" name="Basic" id="Basic" placeholder="0"> 
+        <br><br>
+        <label for="Basic">Contribution to NPS u/s 80CCD(1B)</label>
+        <input type="text" name="Basic" id="Basic1"  placeholder="0">
+        <br><br>
+
+        <label for="Basic">Medical Insurance Premium u/s 80D</label>
+        <input type="text" name="Basic" id="Basic2"  placeholder="0">
+
+        <br><br>
+        <label for="Basic">Donation to charity u/s 80G</label>
+        <input type="text" name="Basic" id="Basic3"  placeholder="0">
+
+        <br><br>
+
+        <label for="Basic">Interest on Educational Loan u/s 80E</label>
+        <input type="text" name="Basic" id="Basic4"  placeholder="0">
+
+        <br><br>
+
+        <label for="Basic">Interest on deposits in saving account u/s 80TTA/TTB</label>
+        <input type="text" name="Basic" id="Basic5"  placeholder="0">
+        <br><br>
+
+
+        
+
+        <label for="salary">Enter your salary:</label>
+        <input type="text" name="salary" id="salary">
+        <br><br>
+        <input type="submit" onclick="handleclick()">
+        <br><br>
+        <table border="1" id="incomans">
+            <tr>
+                <th>0 - 300000:0 <span id="t1"></span></th>
+            </tr>
+            <tr>
+                <th>300000 - 500000:  <span id="t2"></span></th>
+            </tr>
+            <tr>
+                <th>500000 - 750000:<span id="t3"></span> </th>
+            </tr>
+            <tr>
+                <th>750000 - 1000000:<span id="t4"></span> </th>
+            </tr>
+            <tr>
+                <th>1000000 - 1250000:<span id="t5"></span></th>
+            </tr>
+            <tr>
+                <th>1250000 - 1500000:  <span id="t6"></span></th>
+            </tr>
+            <tr>
+                <th>>1500000  <span id="t7"></span></th>
+            </tr>
+        </table>
+
+    </form>
+
+    <script src="./incomtaxs.js"></script>
+</body>
+</html>

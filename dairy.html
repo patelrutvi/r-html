@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #dps{
+            font-size: 20px;
+            padding: 20px;
+        }
+       #dairy{
+            border: 2px solid black;
+            display: inline-block;
+            padding: 20px ;
+            margin: 50px;
+        }
+        #ansd{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <form method="post" action="#" id="dairy" onsubmit="return handelSubmit()">
+        <label for="" id="dps">Dairy Production System</label>
+
+        <br><br><br>
+
+        <label for="">Available Milk:</label>
+        <input type="text" name="milk" id="milk" placeholder="please enter milk in litter"><span id="l1"> &nbsp; ltr</span>
+        <br><br>
+
+        <label for="">Buttermilk:</label>
+        <input type="text" name="buttermilk" id="buttermilk" placeholder="please enter buttermilk in litter"><span id="l2"> &nbsp;2 ltr/kg</span>  
+
+
+
+        <br><br>
+
+
+        <label for="">Curd:</label>
+        <input type="text" name="Curd" id="Curd" placeholder="please enter Curd in kg"><span id="l3"> &nbsp;3 ltr/kg</span> 
+
+        <br><br>
+
+       
+
+        <label for="">Panir:</label>
+        <input type="text" name="panir" id="panir" placeholder="please enter panir in kg"><span id="l4"> &nbsp;5 ltr/kg</span> 
+
+        <br><br>
+
+        <label for="">Chees:</label>
+        <input type="text" name="chees" id="chees" placeholder="please enter chees in kg"><span id="l5">&nbsp10 ltr/kg</span> 
+
+        <br><br>
+
+        <input type="submit" onclick="handelClick()">
+
+        <br><br>
+
+       <div id="ansd">
+        <span>Buttermilk: <span id="p1"></span></span><br><br>
+        <span>Curd:<span id="p2"></span></span> <br><br>
+        <span>Panir:<span id="p3"></span></span> <br><br>
+        <span>Chees:<span id="p4"></span></span> <br><br>
+
+        <span>Remaining milk:<span id="rm"></span></span> <br><br>
+       </div>
+
+      
+    </form>
+
+    <script src="./dairy.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

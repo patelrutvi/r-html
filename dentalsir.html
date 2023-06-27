@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #disapt ,#aptmyplan {
+            display: none;
+
+        }
+        body{
+            border: 2px solid black;
+            display: inline-block;
+            padding: 10px;
+            margin: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <span>please select treatment</span>
+    <br><br>
+    <select name="dental" id="dental" onchange="heandelChange()">
+        <option value="0">--select treatment--</option>
+        <option value="tc">Teeth Cleaning</option>
+        <option value="fl">Fillings</option>
+        <option value="rct">Root Canal Treatment</option>
+        <option value="r_c">RCT + Cover</option>
+        <option value="br">Braces/Invisalign</option>
+    </select>
+
+    <br><br>
+
+
+    <div id="disapt">
+        <table id="plan" border="1">
+            <tr>
+                <th>Treatment</th>
+                <th>Seating</th>
+                <th>Costing</th>
+            </tr>
+            <tr>
+                <td id="trname"></td>
+                <td id="trs"></td>
+                <td id="trc"></td>
+            </tr>
+        </table>
+
+        <br><br>
+
+        <span>Select Appoiment Date:</span>
+        <input type="date" name="date" id="date" onchange="selectDate()">
+        
+
+        <button id="apt" onclick="heandelApt()">Book Appoiment</button>
+
+        <br><br>
+
+    </div>
+    <div id="aptplan">
+        <table id="aptmyplan"  border="1">
+
+        </table>
+    </div>
+
+    <script src="./dentalsir.js"></script>
+</body>
+
+</html>
+
+
